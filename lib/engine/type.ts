@@ -5,8 +5,8 @@ export type PieceType = 'pawn' | 'rook' | 'knight' | 'bishop' | 'queen' | 'king'
 export type PlayerColor = 'white' | 'black';
 
 export interface Piece {
-    type: PieceType;
-    color: PlayerColor;
+    type?: PieceType;
+    color?: PlayerColor;
     hasMoved?: boolean;
 }
 
